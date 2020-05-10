@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+<input type="text">
+<textarea name="" id="" cols="30" rows="10"></textarea>
+<p contenteditable="true"></p>
+</body>
+<script>
+    var oP = document.getElementsByTagName('p')[0];
+    oP.innerHTML = '&nbsp; &nbsp;<div>11</div><div>11</div>'
+    var oT = document.getElementsByTagName('textarea')[0]
+    oT.onchange=function () {
+        oP.innerText = oT.value;
+    }
+</script>
+</html>

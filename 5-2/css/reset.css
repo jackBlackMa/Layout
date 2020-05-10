@@ -1,0 +1,51 @@
+html {
+    /* 微软雅黑 黑体 宋体 */
+    font-family: "Microsoft YaHei UI", "sans-serif", 'Arial';
+    color: #303030;
+    backgrond: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+outline：none在pc端为a标签定义这个样式的目的是为了取消ie浏览器下点击a标签时出现的虚线。
+*/
+a {
+    text-decoration: none;
+    color: #666;
+    outline: none;
+}
+
+/*
+这个属性只用于iOS (iPhone和iPad)。当你点击一个链接或者通过Javascript定义的可点击元素的时候，它就会出现一个半透明的灰色背景。要重设这个表现，你可以设置-webkit-tap-highlight-color为任何颜色。
+想要禁用这个高亮，设置颜色的alpha值为0即可。
+示例：设置高亮色为0%透明的红色:
+-webkit-tap-highlight-color: rgba(255,0,0,0.5);
+浏览器支持: 只有iOS(iPhone和iPad).
+*/
+a {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+/*
+user-modify属性，用来控制用户能否对页面文本进行编辑。与标签的contentEditable属性类似。
+-webkit-user-modify: read-only | read-write | read-write-plaintext-only
+*/
+input:focus {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+
+/* 风格统一去除  */
+input[type = "button"], input[type = "submit"], input[type = "reset"] {
+    -webkit-appearance: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
