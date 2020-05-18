@@ -11,27 +11,62 @@ header {
     z-index: 9;
     width: 100%;
     max-width: 1080px;
-    height: 330px;
-    box-shadow: 0 4px #666;
+    height: 7.86rem;
+    box-shadow: 0 0.09rem #666;
 }
 
 .box {
     max-width: 1080px;
-    padding-top: 330px;
+    padding-top: 7.86rem;
 }
 
 .hots {
-    padding: 0 40px;
-    height: 920px;
+    padding: 0 3.7%;
+    height: 21.9rem;
 }
 
+.hots>div {
+    height: 2.9rem;
+    font-size: 1.43rem;
+    line-height: 2.9rem;
+    color: #f62828;
+    padding: 1rem 0 0 10.5%;
+}
+
+.hots li {
+    border-bottom: 6px dotted #666;
+}
+
+.hots li:last-child {
+    border-bottom: 6px dotted #fff;
+}
+
+.hots li a {
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 0 156px 0 108px;
+}
+
+.hots li a:before {
+    content: '\200B';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 162px;
+    left: 28px;
+    background: #666;
+    border-radius: 50%;
+}
+
+
 .model {
-    padding: 0 40px;
-    height: 1460px;
+    padding: 0 3.7%;
+    height: 34.76rem;
 }
 
 footer {
-    height: 145px;
+    height: 3.45rem;
 }
 
 
