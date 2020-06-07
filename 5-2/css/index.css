@@ -34,31 +34,56 @@ header {
 }
 
 .hots li {
-    border-bottom: 6px dotted #666;
+    border-bottom: 0.14rem dotted #666;
 }
 
 .hots li:last-child {
-    border-bottom: 6px dotted #fff;
+    border-bottom: 0.14rem dotted #fff;
 }
 
 .hots li a {
     position: relative;
     display: block;
     height: 100%;
-    padding: 0 156px 0 108px;
+    padding: 0 14% 0 10%;
 }
 
 .hots li a:before {
     content: '\200B';
     position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 162px;
-    left: 28px;
+    width: 0.71rem;
+    height: 0.71rem;
+    top: 3.8rem;
+    left: 0.03%;
     background: #666;
     border-radius: 50%;
 }
 
+.hots h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    white-space: nowrap;
+    font-size: 1.33rem;
+    height: 2.67rem;
+    line-height: 2.67rem;
+    padding-top: .29rem;
+    font-weight: bold;
+}
+
+.hots p {
+    line-height: 1.19rem;
+    height: 2.38rem;
+    overflow: hidden;
+}
+
+.hots li div {
+    line-height: 1rem;
+    height: 1rem;
+    padding-left: 0.062%;
+    margin: 1rem 0 1.38rem;
+}
 
 .model {
     padding: 0 3.7%;
